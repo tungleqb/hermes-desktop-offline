@@ -1,0 +1,8 @@
+﻿artifacts/
+test-install*/
+logs/
+*.zip
+*.msix
+.env
+__pycache__/
+*.pyc

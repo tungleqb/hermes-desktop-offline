@@ -1,0 +1,20 @@
+# Hermes Desktop Offline — config seed
+# Model provider: local LAN LLM (adjust to your Ollama / LM Studio / llama.cpp / vLLM server)
+model:
+  provider: openai-compatible
+  base_url: http://127.0.0.1:11434/v1
+  model: qwen3:14b
+
+# Offline mode: never attempt cloud providers
+network:
+  offline: true
+  allow_lan: true
+
+# Local gateway
+gateway:
+  host: 127.0.0.1
+  port: 8787
+
+# Toolsets: web disabled in strict offline
+toolsets:
+  web: false

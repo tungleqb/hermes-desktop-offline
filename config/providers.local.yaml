@@ -1,0 +1,15 @@
+# Loopback provider presets for offline machines
+providers:
+  ollama:
+    base_url: http://127.0.0.1:11434/v1
+    type: openai-compatible
+  lm-studio:
+    base_url: http://127.0.0.1:1234/v1
+    type: openai-compatible
+  llama-cpp-server:
+    base_url: http://127.0.0.1:8080/v1
+    type: openai-compatible
+  vllm-lan:
+    base_url: http://100.106.91.39:8001/v1
+    type: openai-compatible
+    note: LAN AI server (toriai) — allowed in mode=lan
